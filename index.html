@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canais ao Vivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Canais ao Vivo</h1>
+  </header>
+  <main>
+    <aside class="channel-list">
+      <ul>
+        <li onclick="switchChannel('channel1.mp4')">
+          <img src="channel1-thumbnail.jpg" alt="Canal 1">
+          <span>Canal 1</span>
+        </li>
+        <li onclick="switchChannel('channel2.mp4')">
+          <img src="channel2-thumbnail.jpg" alt="Canal 2">
+          <span>Canal 2</span>
+        </li>
+        <li onclick="switchChannel('channel3.mp4')">
+          <img src="channel3-thumbnail.jpg" alt="Canal 3">
+          <span>Canal 3</span>
+        </li>
+      </ul>
+    </aside>
+    <section class="video-player">
+      <video id="player" controls autoplay>
+        <source src="channel1.mp4" type="video/mp4">
+        Seu navegador não suporta o player de vídeo.
+      </video>
+      <div class="program-info">
+        <h2 id="program-title">Programa Atual</h2>
+        <p id="program-description">Descrição do programa em exibição.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Canais ao Vivo - Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
