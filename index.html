@@ -13,25 +13,30 @@
   <main>
     <aside class="channel-list">
       <ul>
-        <li onclick="switchChannel('channel1.mp4')">
-          <img src="channel1-thumbnail.jpg" alt="Canal 1">
-          <span>Canal 1</span>
+        <li onclick="switchChannel('https://reidoscanais.tv/embed/?id=globorj-globorio')">
+          <img src="channel1-thumbnail.jpg" alt="Globo RJ">
+          <span>Globo RJ</span>
         </li>
-        <li onclick="switchChannel('channel2.mp4')">
-          <img src="channel2-thumbnail.jpg" alt="Canal 2">
-          <span>Canal 2</span>
+        <li onclick="switchChannel('https://reidoscanais.tv/embed/?id=recordrj-recordrio')">
+          <img src="channel2-thumbnail.jpg" alt="Record RJ">
+          <span>Record RJ</span>
         </li>
-        <li onclick="switchChannel('channel3.mp4')">
-          <img src="channel3-thumbnail.jpg" alt="Canal 3">
-          <span>Canal 3</span>
+        <li onclick="switchChannel('https://reidoscanais.tv/embed/?id=sbt-sbtrio')">
+          <img src="channel3-thumbnail.jpg" alt="SBT RJ">
+          <span>SBT RJ</span>
         </li>
       </ul>
     </aside>
     <section class="video-player">
-      <video id="player" controls autoplay>
-        <source src="https://reidoscanais.tv/embed/?id=globorj-globorio" type="video/mp4">
-        Seu navegador não suporta o player de vídeo.
-      </video>
+      <iframe
+        id="player"
+        src="https://reidoscanais.tv/embed/?id=globorj-globorio"
+        allow="encrypted-media"
+        allowfullscreen=""
+        frameborder="0"
+        width="100%"
+        height="400">
+      </iframe>
       <div class="program-info">
         <h2 id="program-title">Programa Atual</h2>
         <p id="program-description">Descrição do programa em exibição.</p>
