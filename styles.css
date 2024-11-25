@@ -1,3 +1,4 @@
+/* Geral */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -58,10 +59,11 @@ main {
   flex-direction: column;
 }
 
-video {
+iframe {
   width: 100%;
-  height: auto;
+  height: 400px;
   background: black;
+  border: none;
 }
 
 .program-info {
